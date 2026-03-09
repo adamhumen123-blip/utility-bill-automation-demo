@@ -1,0 +1,7 @@
+Provider Name: Demo Electricity Provider
+Account Number: ACC-100245
+Billing Period: Jan 2026
+Amount Due: $143.22
+Due Date: 2026-02-10
+Usage: 845 kWh
+Bill Download Date: 2026-03-09
