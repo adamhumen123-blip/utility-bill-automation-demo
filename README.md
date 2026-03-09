@@ -1,3 +1,4 @@
+A modular automation system designed to log into utility provider portals, download billing statements, extract key billing data, and compile structured reports for recurring processing.
 # Utility Bill Automation System
 
 > **Proposal Demo Repository**  
