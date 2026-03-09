@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Utility Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .box {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+    }
+    button, a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      text-decoration: none;
+      background: #0d6efd;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Demo Electricity Provider Portal</h2>
+    <p>This is a simulated provider portal for automation testing.</p>
+
+    <div id="loginSection">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="billingSection" class="hidden">
+      <h3>Billing Dashboard</h3>
+      <p>Account Number: ACC-100245</p>
+      <p>Billing Period: Jan 2026</p>
+      <p>Amount Due: $143.22</p>
+      <p>Due Date: 2026-02-10</p>
+      <a href="sample_bill.txt" download>Download Latest Bill</a>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+
+      if (username && password) {
+        document.getElementById("loginSection").classList.add("hidden");
+        document.getElementById("billingSection").classList.remove("hidden");
+      } else {
+        alert("Enter username and password");
+      }
+    }
+  </script>
+</body>
+</html>
