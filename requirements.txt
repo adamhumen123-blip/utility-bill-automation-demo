@@ -1,0 +1,5 @@
+playwright
+pandas
+pdfplumber
+pytesseract
+python-dotenv
