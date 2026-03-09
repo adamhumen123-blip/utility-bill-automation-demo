@@ -1,3 +1,11 @@
+## Working Demo Simulation
+
+This repository includes a simulated provider portal and sample bill file to demonstrate how the automation architecture handles provider login flow, bill retrieval, and structured billing data extraction.
+
+Demo files included:
+- `demo_portal.html` — simulated utility portal
+- `sample_bill.txt` — simulated downloadable bill
+- `simulation_demo.py` — parses extracted bill content into structured output
 A modular automation system designed to log into utility provider portals, download billing statements, extract key billing data, and compile structured reports for recurring processing.
 # Utility Bill Automation System
 
